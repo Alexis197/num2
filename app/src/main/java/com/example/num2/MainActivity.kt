@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    Greeting("Alexis", "CaballeroVaz")
                 }
             }
         }
@@ -33,9 +33,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
+fun Greeting(name: String,apell: String) {
     Surface(color = Color.Magenta) {
-        Text(text = "Hello $name!", modifier = Modifier.padding(24.dp))
+        Text(text = "Hola $name! $apell", modifier = Modifier.padding(24.dp))
     }
 }
 
@@ -43,6 +43,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     Num2Theme {
-        Greeting("Android")
+        Greeting("Alexis Caballero", "CaballeroVAz")
     }
 }
